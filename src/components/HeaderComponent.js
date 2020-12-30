@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem} from 'reactstrap';
+import { Button, Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
@@ -22,7 +22,7 @@ class Header extends Component {
         return (
             <Navbar dark sticky="top" expand="md">
                 <div className="container">
-                    <NavbarBrand href="/"><img src="/assets/images/logo.png" height="30" width="30" alt="Lavender Salon Logo" /></NavbarBrand>
+                    <NavbarBrand href="/"><img src="/assets/images/logo.jpg" height="100" width="100" alt="Lavender Salon" /></NavbarBrand>
                     <NavbarToggler onClick={this.toggleNav} />
                     <Collapse isOpen={this.state.isNavOpen} navbar>
                         <Nav navbar className="topBottomBordersOut navbar-nav ml-auto">

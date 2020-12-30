@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, Label, Input} from 'reactstrap';
+import { Button, Form, Label, Input } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 function Footer(props) {
@@ -29,7 +29,7 @@ function Footer(props) {
                             <Form className="newsletter-form">
                                 <Input type="email" class="form-control" id="emailAddress" placeholder="Enter your email" autocomplete="off" required />
                                 <Label class="form-control-placeholder" for="emailAddress" />
-                                <Button type="submit" class="button">Subscribe</Button>              
+                                <Button type="submit" class="button">Subscribe</Button>
                             </Form>
                         </div>
                     </div>
@@ -45,9 +45,9 @@ function Footer(props) {
                             <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
                         </ul>
                     </div>
-                    <Button className="btn btn-lg btn-secondary text-nowrap d-block d-sm-none fixed-bottom" to='/book'>Book Appointment</Button>
-                </div>      
-            </div>           
+                </div>
+            </div>
+            <Button className="btn btn-lg btn-secondary text-nowrap d-block d-sm-none fixed-bottom" to='/book' block>Book Appointment</Button>
         </footer>
     );
 }

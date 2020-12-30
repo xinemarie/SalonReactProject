@@ -1,29 +1,38 @@
 import React from 'react';
-import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import {
+    Button,
+    Form,
+    FormGroup,
+    Label,
+    Input
+} from 'reactstrap';
 
 function Contact(props) {
     return (
         <div className="container">
-            <div className="row">
-                <div className="col">
-                    <h2>Contact</h2>
-                    <hr />
-                </div>
-            </div>
-
-            <div className="row row-content align-items-center">
-                <div className="col-sm-4">
-                    <h5>Our Address</h5>
-                    <address>
-                        1 Nucamp Way<br />
-                        Seattle, WA 98001<br />
-                        U.S.A.
-                    </address>
-                </div>
-                <div className="col">
-                    <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> 1-206-555-1234</a><br />
-                    <a role="button" className="btn btn-link" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o" /> campsites@nucamp.co</a>
+            <div className="row row-content">
+                <div className="col-7 offset-2">
+                    <Form className="book-modal-form">
+                        <FormGroup className="form-group row">
+                            <Input type="name" className="form-control" id="fullName" autocomplete="off" required />
+                            <Label className="form-control-placeholder" for="fullName">Full Name</Label>
+                        </FormGroup>
+                        <FormGroup className="form-group row">
+                            <Input type="email" className="form-control" id="contactEmail" autocomoplete="off" required />
+                            <Label className="form-control-placeholder" for="contactEmail">Email</Label>
+                        </FormGroup>
+                        <FormGroup className="form-group row">
+                            <Input type="tel" className="form-control" id="contactNum" autocomplete="off" required />
+                            <Label className="form-control-placeholder" for="contactNum">Phone Number</Label>
+                        </FormGroup>
+                        <FormGroup className="form-group row">
+                            <Input type="textarea" className="form-control" name="message" id="message" rows="5" placeholder="Your message..." />
+                            <Label className="form-control-placeholder" for="message"></Label>
+                        </FormGroup>
+                        <FormGroup className="form-group row">
+                            <Button type="submit" className="contactBtn">Submit your message</Button>
+                        </FormGroup>
+                    </Form>
                 </div>
             </div>
         </div>

@@ -120,7 +120,7 @@ section {
 
 /* parallax 
 .parallaxSign {
-  background-image: url("../images/lavendersalonsign.png");
+  background-image: url("/assets/images/lavendersalonsign.png");
   height: 650px;
   background-attachment: fixed;
   background-position: center;
@@ -129,7 +129,7 @@ section {
   width: auto; }
 
 .parallaxTools {
-  background-image: url("../images/tools.jpg");
+  background-image: url("/assets/images/tools.jpg");
   height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -138,7 +138,7 @@ section {
   width: auto; }
 
 .parallaxBlowdry {
-  background-image: url("../images/blowdry.jpg");
+  background-image: url("/assets/images/blowdry.jpg");
   height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -147,15 +147,14 @@ section {
   width: auto; }
 
 .parallaxShears {
-  background-image: url("../images/shears.jpg");
+  background-image: url("/assets/images/shears.jpg");
   height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: auto; }
-
- end parallax */
+end parallax */
 
 
 
