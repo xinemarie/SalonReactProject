@@ -1,12 +1,14 @@
 import React from 'react';
 import SalonCarousel from './CarouselComponent';
 import SalonCards from './CardsComponent';
+import BookModal from './ModalComponent';
 
 function Home(props) {
     return (
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
+                    <BookModal />
                     <SalonCarousel />
                 </div>
             </div>

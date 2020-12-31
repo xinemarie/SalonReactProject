@@ -1,6 +1,5 @@
 import React from 'react';
-import { UncontrolledCollapse, Button } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { UncontrolledCollapse, Table } from 'reactstrap';
 
 function Services(props) {
     return (
@@ -17,7 +16,7 @@ function Services(props) {
                     <UncontrolledCollapse toggler="#cut">
                         <div className="panel-body">
                             <div className="table-responsive">
-                                <table className="table table-borderless table-hover">
+                                <Table borderless>
                                     <tr>
                                         <td> Women's haircut</td>
                                         <td className="d-flex justify-content-end">$65</td>
@@ -38,7 +37,7 @@ function Services(props) {
                                         <td>Shampoo only</td>
                                         <td className="d-flex justify-content-end">$5</td>
                                     </tr>
-                                </table>
+                                </Table>
                             </div>
                         </div>
                     </UncontrolledCollapse>
@@ -52,7 +51,7 @@ function Services(props) {
                     <UncontrolledCollapse toggler="#treat">
                         <div className="panel-body">
                             <div className="table-responsive">
-                                <table className="table table-borderless table-hover">
+                                <Table borderless>
                                     <tr>
                                         <td>Deep conditioning treatment</td>
                                         <td className="d-flex justify-content-end">$30</td>
@@ -61,7 +60,7 @@ function Services(props) {
                                         <td>Treatment with blowout</td>
                                         <td className="d-flex justify-content-end">$65</td>
                                     </tr>
-                                </table>
+                                </Table>
                             </div>
                         </div>
                     </UncontrolledCollapse>
@@ -75,7 +74,7 @@ function Services(props) {
                     <UncontrolledCollapse toggler="#color">
                         <div className="panel-body">
                             <div className="table-responsive">
-                                <table className="table table-borderless table-hover">
+                                <Table borderless>
                                     <tr>
                                         <td>Base color only</td>
                                         <td className="d-flex justify-content-end">$80</td>
@@ -112,7 +111,7 @@ function Services(props) {
                                         <td>Artistic vivid coloring</td>
                                         <td className="d-flex justify-content-end">$280</td>
                                     </tr>
-                                </table>
+                                </Table>
                             </div>
                         </div>
                     </UncontrolledCollapse>
@@ -126,7 +125,7 @@ function Services(props) {
                     <UncontrolledCollapse toggler="#blow">
                         <div className="panel-body">
                             <div className="table-responsive">
-                                <table className="table table-borderless table-hover">
+                                <Table borderless>
                                     <tr>
                                         <td>Brazilian blowout treatment</td>
                                         <td className="d-flex justify-content-end">$250</td>
@@ -135,7 +134,7 @@ function Services(props) {
                                         <td>Brazilian blowout *long hair</td>
                                         <td className="d-flex justify-content-end">$300</td>
                                     </tr>
-                                </table>
+                                </Table>
                             </div>
                         </div>
                     </UncontrolledCollapse>
@@ -149,7 +148,7 @@ function Services(props) {
                     <UncontrolledCollapse toggler="#thermal">
                         <div className="panel-body">
                             <div className="table-responsive">
-                                <table className="table table-borderless table-hover">
+                                <Table borderless>
                                     <tr>
                                         <td>Simple blowout</td>
                                         <td className="d-flex justify-content-end">$45</td>
@@ -158,7 +157,7 @@ function Services(props) {
                                         <td>Blowout and curled</td>
                                         <td className="d-flex justify-content-end">$55</td>
                                     </tr>
-                                </table>
+                                </Table>
                             </div>
                         </div>
                     </UncontrolledCollapse>
@@ -172,7 +171,7 @@ function Services(props) {
                     <UncontrolledCollapse toggler="#extensions">
                         <div className="panel-body">
                             <div className="table-responsive">
-                                <table className="table table-borderless table-hover">
+                                <Table borderless>
                                     <tr>
                                         <td>Extension installation</td>
                                         <td className="d-flex justify-content-end">$225</td>
@@ -185,7 +184,7 @@ function Services(props) {
                                         <td>Extension removal</td>
                                         <td className="d-flex justify-content-end">$45</td>
                                     </tr>
-                                </table>
+                                </Table>
                             </div>
                         </div>
                     </UncontrolledCollapse>
@@ -199,7 +198,7 @@ function Services(props) {
                     <UncontrolledCollapse toggler="#wax">
                         <div className="panel-body">
                             <div className="table-responsive">
-                                <table className="table table-borderless table-hover">
+                                <Table borderless>
                                     <tr>
                                         <td>Brow</td>
                                         <td className="d-flex justify-content-end">$15</td>
@@ -232,7 +231,7 @@ function Services(props) {
                                         <td>Full face</td>
                                         <td className="d-flex justify-content-end">$45</td>
                                     </tr>
-                                </table>
+                                </Table>
                             </div>
                         </div>
                     </UncontrolledCollapse>

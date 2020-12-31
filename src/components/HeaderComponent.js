@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import BookModal from './ModalComponent';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
     constructor(props) {
