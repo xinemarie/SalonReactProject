@@ -11,7 +11,7 @@ const items = [
     {
         src: 'assets/images/carousel1.jpg',
         altText: '',
-        caption: ''
+        caption: 'Lavender Salon - Charleston, SC'
     },
     {
         src: 'assets/images/carousel2.jpg',
@@ -54,7 +54,7 @@ const SalonCarousel = (props) => {
                 key={item.src}
             >
                 <img src={item.src} alt={item.altText} />
-                <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+                <CarouselCaption className="carousel-item" id="salonCarousel" captionText={item.caption} captionHeader={item.caption} />
             </CarouselItem>
         );
     });

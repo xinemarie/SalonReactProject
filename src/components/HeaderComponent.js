@@ -23,7 +23,7 @@ class Header extends Component {
     render() {
         return (
             <Navbar dark sticky="top" expand="md">
-                <div className="container">
+                <div className="container-fluid">
                     <NavbarBrand href="/"><img src="/assets/images/logo.jpg" height="100" width="100" alt="Lavender Salon" /></NavbarBrand>
                     <NavbarToggler onClick={this.toggleNav} />
                     <Collapse isOpen={this.state.isNavOpen} navbar>

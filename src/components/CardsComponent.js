@@ -18,7 +18,7 @@ const SalonCards = (props) => {
                         <CardBody>
                             <CardTitle tag="h5">Cut</CardTitle>
                             <CardText>Haircuts for men, women, and children, and beard trim.</CardText>
-                            <Button>Services</Button>
+                            <Button href='/services'>Services</Button>
                         </CardBody>
                     </Card>
                 </div>
@@ -28,7 +28,7 @@ const SalonCards = (props) => {
                         <CardBody>
                             <CardTitle tag="h5">Color</CardTitle>
                             <CardText>Base color, foil highlights, balayage, gloss, and ombre.</CardText>
-                            <Button>Services</Button>
+                            <Button href='/services'>Services</Button>
                         </CardBody>
                     </Card>
                 </div>
@@ -38,7 +38,7 @@ const SalonCards = (props) => {
                         <CardBody>
                             <CardTitle tag="h5">Style and more!</CardTitle>
                             <CardText>Simple blowout, treatments, Brazilian blowout, extensions, and waxing.</CardText>
-                            <Button to='/services'>Services</Button>
+                            <Button href='/services'>Services</Button>
                         </CardBody>
                     </Card>
                 </div>

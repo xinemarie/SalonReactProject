@@ -2,9 +2,9 @@ import React from 'react';
 import { Button, Form, Label, Input } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function Footer(props) {
+const Footer = (props) => {
     return (
-        <footer className="site-footer">
+        <section id="site-footer">
             <div className="container">
                 <div className="row text-center text-xs-center text-sm-left text-md-left">
                     <div className="col-sm-6 col-md-3">
@@ -28,7 +28,7 @@ function Footer(props) {
                         <div class="newsletter js-rollover" data-radius="50">
                             <Form className="newsletter-form">
                                 <Input type="email" class="form-control" id="emailAddress" placeholder="Enter your email" autocomplete="off" required />
-                                <Label class="form-control-placeholder" for="emailAddress" />
+                                <Label class="form-control-placeholder" htmlFor="emailAddress" />
                                 <Button type="submit" class="button">Subscribe</Button>
                             </Form>
                         </div>
@@ -48,7 +48,7 @@ function Footer(props) {
                 </div>
             </div>
             <Button className="btn btn-lg btn-secondary text-nowrap d-block d-sm-none fixed-bottom" to='/book' block>Book Appointment</Button>
-        </footer>
+        </section>
     );
 }
 

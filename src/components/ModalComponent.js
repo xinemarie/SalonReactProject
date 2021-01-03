@@ -19,22 +19,22 @@ const BookModal = (props) => {
                     <ModalBody>
                         <div className="form-group">
                             <Input type="name" className="form-control" id="firstName" autocomplete="off" required />
-                            <Label className="form-control-placeholder" for="firstName">First Name</Label>
+                            <Label className="form-control-placeholder" htmlFor="firstName">First Name</Label>
                         </div>
                         <div className="form-group">
                             <Input type="name" className="form-control" id="lastName" autocomplete="off" required />
-                            <Label className="form-control-placeholder" for="lastName">Last Name</Label>
+                            <Label className="form-control-placeholder" htmlFor="lastName">Last Name</Label>
                         </div>
                         <div className="form-group">
-                            <Input type="email" className="form-control" id="emailAddress" autocomplete="off" required />
-                            <Label className="form-control-placeholder" for="emailAddress">Email address</Label>
+                            <Input type="email" className="form-control" id="emailBook" autocomplete="off" required />
+                            <Label className="form-control-placeholder" htmlFor="emailBook">Email Address</Label>
                         </div>
                         <div className="form-group">
                             <Input type="tel" className="form-control" id="phoneNumber" autocomplete="off" required />
-                            <Label className="form-control-placeholder" for="phoneNumber">Phone Number</Label>
+                            <Label className="form-control-placeholder" htmlFor="phoneNumber">Phone Number</Label>
                         </div>
                         <div className="form-group">
-                            <Label className="select-form-control-placeholder" for="service" />
+                            <Label className="select-form-control-placeholder" htmlFor="service" />
                             <Input classname="form-control" type="select" name="service" id="service" required>
                                 <option selected disable value>Pick a service...</option>
                                 <option>Women's haircut</option>
@@ -72,10 +72,10 @@ const BookModal = (props) => {
                         </div>
                         <div className="form-group">
                             <Input type="date" className="form-control" id="pickDate" autocomplete="off" required data-date-end-date="4d" />
-                            <Label className="form-control-placeholder" for="pickDate"></Label>
+                            <Label className="form-control-placeholder" htmlFor="pickDate"></Label>
                         </div>
                         <div className="form-group">
-                            <Label className="select-form-control-placeholder" for="time" />
+                            <Label className="select-form-control-placeholder" htmlFor="time" />
                             <Input className="form-control" type="select" name="time" id="time" required>
                                 <option selected disable value>Pick a time...</option>
                                 <option>10:00 AM</option>
