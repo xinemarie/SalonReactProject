@@ -29,6 +29,30 @@ header h1, header h2, header h3 {
 
 
 
+  /* round carousel indicators 
+.carousel-indicators--round li {
+  border-radius: 10px;
+  margin: 1px 3px;
+  height: 10px;
+  max-width: 10px;
+  border: 1px solid #FFF;
+  background-color: transparent;
+}
+.carousel-indicators .active {
+  background-color: #fff;
+  max-width: 12px;
+  margin: 0 3px;
+  height: 12px;
+}
+
+/* or this code 
+.carousel-indicators li {
+  border-radius: 12px;
+  width: 12px;
+  height: 12px;
+  background-color: #404040;
+}
+end round carousel indicators */
 
 
 /* Footer */
@@ -118,7 +142,7 @@ section {
 
 
 
-
+/* parallax */
 .parallaxSign {
   background-image: url(./assets/images/lavendersalonsign.png);
   height: 650px;
@@ -154,7 +178,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   width: auto; }
-
+/* end parallax */
 
 
 
@@ -343,8 +367,9 @@ button.btn-check-login:hover {
   font-size: 100%;
   padding: 7px 0 0 13px;
   margin: 0; }
-
 /* end modal */
+
+
 
 
 
@@ -537,8 +562,10 @@ button.btn-check-login:hover {
 .slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight; }
-
 /* end carousel effect */
+
+
+
 
 
 
@@ -578,7 +605,7 @@ button.btn-check-login:hover {
   line-height: 1;
   position: absolute;
   right: 9px;
-  bottom: 9px;
+  bottom: 34px;
   display: inline-block;
   margin: 0;
   padding: 0;

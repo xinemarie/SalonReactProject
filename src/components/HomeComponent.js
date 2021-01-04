@@ -1,13 +1,11 @@
 import React from 'react';
 import SalonCarousel from './CarouselComponent';
 import SalonCards from './CardsComponent';
-import BookModal from './ModalComponent';
 
 const Home = (props) => {
     return (
         <React.Fragment>
-            <div className="container">
-                <BookModal />
+            <div>
                 <SalonCarousel className="carousel-item" id="salonCarousel" />
             </div>
 
@@ -51,7 +49,7 @@ const Home = (props) => {
                         </ul>
                     </div>
                     <div className="col-md-7 text-center">
-                        iframe here??
+                        <img className="img-fluid" src="assets/images/map.png" />
                     </div>
                 </div>
             </div>

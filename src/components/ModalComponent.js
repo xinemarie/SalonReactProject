@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import { Button, Modal, ModalBody, Form, Input, Label } from 'reactstrap';
+import {
+    Button,
+    Modal,
+    ModalBody,
+    Form,
+    FormGroup,
+    Input,
+    Label
+} from 'reactstrap';
 
 const BookModal = (props) => {
     const {
@@ -17,23 +25,23 @@ const BookModal = (props) => {
                 <h4 className="modal-title text-center">BOOK APPOINTMENT</h4>
                 <Form className="book-modal-form">
                     <ModalBody>
-                        <div className="form-group">
+                        <FormGroup>
                             <Input type="name" className="form-control" id="firstName" autocomplete="off" required />
                             <Label className="form-control-placeholder" htmlFor="firstName">First Name</Label>
-                        </div>
-                        <div className="form-group">
+                        </FormGroup>
+                        <FormGroup>
                             <Input type="name" className="form-control" id="lastName" autocomplete="off" required />
                             <Label className="form-control-placeholder" htmlFor="lastName">Last Name</Label>
-                        </div>
-                        <div className="form-group">
+                        </FormGroup>
+                        <FormGroup>
                             <Input type="email" className="form-control" id="emailBook" autocomplete="off" required />
                             <Label className="form-control-placeholder" htmlFor="emailBook">Email Address</Label>
-                        </div>
-                        <div className="form-group">
+                        </FormGroup>
+                        <FormGroup>
                             <Input type="tel" className="form-control" id="phoneNumber" autocomplete="off" required />
                             <Label className="form-control-placeholder" htmlFor="phoneNumber">Phone Number</Label>
-                        </div>
-                        <div className="form-group">
+                        </FormGroup>
+                        <FormGroup>
                             <Label className="select-form-control-placeholder" htmlFor="service" />
                             <Input classname="form-control" type="select" name="service" id="service" required>
                                 <option selected disable value>Pick a service...</option>
@@ -69,12 +77,12 @@ const BookModal = (props) => {
                                 <option>Ears</option>
                                 <option>Full face wax</option>
                             </Input>
-                        </div>
-                        <div className="form-group">
+                        </FormGroup>
+                        <FormGroup>
                             <Input type="date" className="form-control" id="pickDate" autocomplete="off" required data-date-end-date="4d" />
                             <Label className="form-control-placeholder" htmlFor="pickDate"></Label>
-                        </div>
-                        <div className="form-group">
+                        </FormGroup>
+                        <FormGroup>
                             <Label className="select-form-control-placeholder" htmlFor="time" />
                             <Input className="form-control" type="select" name="time" id="time" required>
                                 <option selected disable value>Pick a time...</option>
@@ -85,13 +93,13 @@ const BookModal = (props) => {
                                 <option>2:00 PM</option>
                                 <option>3:00 PM</option>
                             </Input>
-                        </div>
-                        <div className="form-group forgot-pass-fau text-center ">
+                        </FormGroup>
+                        <FormGroup className="forgot-pass-fau text-center">
                             <a href="#" className="text-secondary">
                                 By Clicking "Book Appointment" you accept our<br />
                                 <span className="text-primary-fau">Terms and Conditions</span>
                             </a>
-                        </div>
+                        </FormGroup>
                         <div className="btn-check-log">
                             <Button type="submit" className="btn-check-login">Book Appointment</Button>
                         </div>

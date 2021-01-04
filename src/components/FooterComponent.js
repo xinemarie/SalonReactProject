@@ -1,5 +1,10 @@
 import React from 'react';
-import { Button, Form, Label, Input } from 'reactstrap';
+import {
+    Button,
+    Form,
+    Label, 
+    Input
+} from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const Footer = (props) => {
@@ -47,7 +52,6 @@ const Footer = (props) => {
                     </div>
                 </div>
             </div>
-            <Button className="btn btn-lg btn-secondary text-nowrap d-block d-sm-none fixed-bottom" to='/book' block>Book Appointment</Button>
         </section>
     );
 }
