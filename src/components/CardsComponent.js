@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
     Card,
     CardImg,
@@ -7,44 +7,40 @@ import {
     CardTitle,
     Button
 } from 'reactstrap';
+import { CARDS } from '../shared/cards';
 
-const SalonCards = (props) => {
-    return (
-        <div className="container">
-            <div className="row">
+class SalonCards extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            cards: CARDS
+        }
+    }
+
+    render() {
+        const salonCard = this.state.cards.map(card => {
+            return (
                 <div className="col-sm-4 d-flex align-items-stretch">
-                    <Card>
-                        <CardImg top width="100%" src="/assets/images/card1.jpg" alt="Card image cap" />
+                    <Card outline color="dark">
+                        <CardImg top width="100%" src={card.image} alt={card.name} />
                         <CardBody>
-                            <CardTitle tag="h5">Cut</CardTitle>
-                            <CardText>Haircuts for men, women, and children, and beard trim.</CardText>
-                            <Button href='/services'>Services</Button>
+                            <CardTitle tag="h5">{card.name}</CardTitle>
+                            <CardText>{card.description}</CardText>
+                            <Button color="dark" href='/services'>Services</Button>
                         </CardBody>
                     </Card>
                 </div>
-                <div className="col-sm-4 d-flex align-items-stretch">
-                    <Card>
-                        <CardImg top width="100%" src="/assets/images/card2.jpg" alt="Card image cap" />
-                        <CardBody>
-                            <CardTitle tag="h5">Color</CardTitle>
-                            <CardText>Base color, foil highlights, balayage, gloss, and ombre.</CardText>
-                            <Button href='/services'>Services</Button>
-                        </CardBody>
-                    </Card>
-                </div>
-                <div className="col-sm-4 d-flex align-items-stretch">
-                    <Card>
-                        <CardImg top width="100%" src="/assets/images/card3.jpg" alt="Card image cap" />
-                        <CardBody>
-                            <CardTitle tag="h5">Style and more!</CardTitle>
-                            <CardText>Simple blowout, treatments, Brazilian blowout, extensions, and waxing.</CardText>
-                            <Button href='/services'>Services</Button>
-                        </CardBody>
-                    </Card>
+            );
+        });
+
+        return (
+            <div className="container">
+                <div className="row">
+                    {salonCard}
                 </div>
             </div>
-        </div>
-    );
-};
+        );
+    }
+}
 
 export default SalonCards;
