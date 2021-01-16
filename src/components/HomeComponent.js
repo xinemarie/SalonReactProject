@@ -25,11 +25,7 @@ const Home = (props) => {
             </div>
 
             <div className="container my-5">
-                <div className="row">
-                    <div className="col">
-                        <SalonCards />
-                    </div>
-                </div>
+                <SalonCards />
             </div>
 
             <div className="parallaxSign" />
